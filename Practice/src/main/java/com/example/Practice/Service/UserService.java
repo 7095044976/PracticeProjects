@@ -16,6 +16,7 @@ public User updateUserById(long id,User user);
 public void createBatchOfUsers(List<User> user);
 
 
+
 //custom query methods
 
 //Fetch all the users details using custom query
@@ -35,5 +36,8 @@ public List<User> fetchUsersOrderByNameCustom();
 
 //To upload .csv file to database
 public void uploadCsvFileToDB(MultipartFile file) throws Exception, IOException;
+
+//Sample git operation
+public User fetchDetailsForGit(String gmail);
 }
 
