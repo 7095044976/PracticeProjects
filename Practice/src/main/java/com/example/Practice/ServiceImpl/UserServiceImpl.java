@@ -125,4 +125,10 @@ public class UserServiceImpl implements UserService {
 		userRepository.saveAll(to_saveUser);
 	}
 
+	@Override
+	public User fetchDetailsForGit(String gmail) {
+		// TODO Auto-generated method stub
+		return userRepository.fetchUserByGmailForGit(gmail);
+	}
+
 }

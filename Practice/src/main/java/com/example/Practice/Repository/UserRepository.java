@@ -32,6 +32,11 @@ public interface UserRepository extends JpaRepository<User, Long> {
 	   
 	   @Query(value="select u from User u order by name")
 	   public List<User> fetchUsersOrderByNameCustom();
+	   
+	   
+	   //To fetch data for git by passing gmail
+	   @Query(value="select u from User u where gmail=:val")
+	   public User fetchUserByGmailForGit(@Param("val") String gmail);
 }
 
 
