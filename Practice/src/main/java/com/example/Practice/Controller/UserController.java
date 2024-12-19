@@ -148,6 +148,7 @@ public class UserController {
 	@GetMapping("/fetchUserByGmailGitCustom/{gmail}")
 	ResponseEntity<User> fetchUserByGmailGiteCustom(@PathVariable String gmail)
 	{
+		System.out.println("----------------------------");
 		return new ResponseEntity<>(userService.fetchDetailsForGit(gmail),HttpStatus.OK);
 				
  	}
